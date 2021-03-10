@@ -47,6 +47,9 @@ export class ProductsEffect {
  ));
 
 
+ // create effe4cts for Edit and Delete also to read data
+ // from the store for loading for edit and delete
+
   // inject the Effect class with the Service for external calls
   // the _action$, represents the action that may or maynot retutn the Observable
   // Note: THis is equivalent to Observable<Actions>

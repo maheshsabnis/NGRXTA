@@ -1,6 +1,7 @@
 <h2>Then Product List Component</h2>
 <input type="button" value="Create New Product"
  class="btn btn-warning">
+ <div class="container">
 <table class="table table-bordered table-striped">
            <thead>
               <tr>
@@ -16,7 +17,8 @@
                </td>
                <td>
                 <input type="button" value="Edit"
-                class="btn btn-warning">
+                class="btn btn-warning"
+                (click)="navigateToEdit(prd.ProductRowId)">
                </td>
                <td>
                 <input type="button" value="Delete"
@@ -25,3 +27,4 @@
              </tr>
            </tbody>
         </table>
+      </div>

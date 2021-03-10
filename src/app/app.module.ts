@@ -1,3 +1,4 @@
+import { EditProductComponent } from './components/editproductcomponent/app.editproduct.component';
 import { CreateProductComponent } from './components/createpropductcomponent/app.createproduct.component';
 import { ProductListComponent } from './components/productlistcomponent/app.productlist.component';
 import { NgModule } from '@angular/core';
@@ -24,11 +25,12 @@ import { HttpClientModule } from '@angular/common/http';
 @NgModule({
   declarations: [
     AppComponent,
-    MainAppComponent, ProductListComponent,
+    MainAppComponent, ProductListComponent, EditProductComponent,
     CreateProductComponent
   ],
   imports: [
     BrowserModule,FormsModule,
+    // loading the route table at the root of the application
     AppRoutingModule, HttpClientModule,
     // configure all reducers at global level so that
     // all actions are monitored
@@ -42,6 +44,6 @@ import { HttpClientModule } from '@angular/common/http';
     })
   ],
   providers: [],
-  bootstrap: [ProductListComponent]
+  bootstrap: [MainAppComponent]
 })
 export class AppModule { }
